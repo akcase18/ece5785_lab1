@@ -1,5 +1,5 @@
 int main(void)
 {
     while (1) {}
-    return 0;
+    return 10; // Changed return value from 0 -> 10
 }
