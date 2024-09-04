@@ -1,8 +1,6 @@
 hello.txt:
 	echo "hello world!" > hello.txt
 
-PICO_TOOLCHAIN_PATH=/Users/aidancase/.pico-sdk/toolchain/13_2_Rel1
-
 CPP=$(PICO_TOOLCHAIN_PATH)/bin/arm-none-eabi-cpp
 
 main.i: main.c
