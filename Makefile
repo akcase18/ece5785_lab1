@@ -8,3 +8,5 @@ main.i: main.c
 
 clean:
 	rm -f main.i hello.txt
+
+.PHONY: clean
