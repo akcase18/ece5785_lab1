@@ -46,3 +46,5 @@ jobs:
         working-directory: ${{github.workspace}}/source
         run: |
             make clean
+            test ! -f hello.txt
+            
