@@ -10,11 +10,11 @@ OBJS=$(patsubst %.c,%.o,$(SRC))
 all: firmware.elf
 
 clean:
-	rm -f *.i
-	rm -f *.s
-	rm -f *.o 
-	rm -f *.elf
-	rm -f *.img
+	rm -f hello.txt
+	rm -f main.o
+	rm -f main.i
+	rm -f main.s
+	rm -f firmware.elf
 
 hello.txt:
 	echo "hello world!" > hello.txt
