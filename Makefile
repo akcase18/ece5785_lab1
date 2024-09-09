@@ -10,11 +10,7 @@ OBJS=$(patsubst %.c,%.o,$(SRC))
 all: firmware.elf
 
 clean:
-	rm -f hello.txt
-	rm -f main.o
-	rm -f main.i
-	rm -f main.s
-	rm -f firmware.elf
+	rm -f *.txt *.o *.i *.s *.elf
 
 hello.txt:
 	echo "hello world!" > hello.txt
@@ -31,7 +27,7 @@ hello.txt:
 %.elf: %.o
 	$(LD) $< -o $@
 
-OBJS=main.o
+OBJS=main.o second.o
 
 firmware.elf: $(OBJS)
 	$(LD) -o $@ $^
